@@ -1,7 +1,8 @@
 <h2>New Book</h2>
-<form action="/books" method="POST">
+<form action="/books" method="POST" enctype="multipart/form-data">
+    <!-- //enctype="multipar/form --- If you want to insert form or file then we use enctype." -->
     <%- include("_form_fields") %>
 
-    <a href="/authors">Cancel</a>
+    <a href="/books">Cancel</a>
     <button type="submit">Create</button>
-</form> 
+</form>   
